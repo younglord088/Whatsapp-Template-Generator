@@ -33,6 +33,7 @@ git clone https://github.com/your-username/whatsapp-template-manager.git
     ```
 
 3. **Install dependencies:**
+<<<<<<< HEAD
 
     ```bash
     npm install
@@ -68,3 +69,39 @@ Contributions are welcome! If you'd like to contribute to WhatsApp Template Mana
 
 This project is licensed under the MITD License - see the [LICENSE](LICENSE) file for details.
 
+=======
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server:**
+
+    ```bash
+    ng serve
+    ```
+
+5. **Open your web browser and navigate to [http://localhost:4200](http://localhost:4200) to view the application.**
+
+## Usage
+
+1. **Create a new message template by entering a template name and content in the provided fields.**
+2. **Use placeholders like `{name}`, `{date}`, `{location}` in the template content for dynamic values.**
+3. **Save the template to use it later in WhatsApp conversations.**
+4. **To insert placeholders into the template content, click on the "Insert Placeholder" button and select the desired placeholder from the dropdown menu.**
+5. **Manage your saved templates by editing or deleting them as needed.**
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to WhatsApp Template Manager, please follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch for your feature or bug fix.**
+3. **Make your changes and commit them with descriptive commit messages.**
+4. **Push your changes to your fork.**
+5. **Submit a pull request to the main repository's `main` branch.**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+>>>>>>> 3abd0e3b29a03b2cb0a698d378ad789e8c3ae4cc
