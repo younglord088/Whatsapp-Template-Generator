@@ -8,14 +8,14 @@
       </mat-form-field>
       <mat-form-field class="w-full mb-4">
         <mat-label>Template Content</mat-label>
-        <textarea matInput rows="4" placeholder="Enter message with placeholders like {{ '{' }}name{{ '}' }}, {{ '{' }}date{{ '}' }}, {{ '{' }}location{{ '}' }}" [(ngModel)]="templateContent" name="templateContent" required></textarea>
+        <textarea matInput rows="4" placeholder="Enter message with placeholders like {name}, {date}, {location}" [(ngModel)]="templateContent" name="templateContent" required></textarea>
       </mat-form-field>
       <div class="flex items-center justify-between mb-4">
         <button mat-raised-button color="primary" type="submit">Save Template</button>
         <mat-menu #placeholderMenu="matMenu">
-          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}name{{ '}' }}')">{'{'}name{'}'}</button>
-          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}date{{ '}' }}')">{'{'}date{'}'}</button>
-          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}location{{ '}' }}')">{'{'}location{'}'}</button>
+          <ng-container *ngFor="let placeholder of placeholders">
+            <button mat-menu-item (click)="insertPlaceholder(placeholder)">{{ placeholder }}</button>
+          </ng-container>
         </mat-menu>
         <button mat-raised-button [matMenuTriggerFor]="placeholderMenu">
           Insert Placeholder

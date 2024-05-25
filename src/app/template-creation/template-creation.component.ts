@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class TemplateCreationComponent {
   templateName: string = '';
   templateContent: string = '';
+  placeholders: string[] = ['{name}', '{date}', '{location}'];
 
   insertPlaceholder(placeholder: string): void {
     // Logic to insert placeholder at the current cursor position
@@ -33,4 +34,5 @@ export class TemplateCreationComponent {
     this.templateName = '';
     this.templateContent = '';
   }
+  
 }
