@@ -67,3 +67,4 @@ Contributions are welcome! If you'd like to contribute to WhatsApp Template Mana
 ## License
 
 This project is licensed under the MITD License - see the [LICENSE](LICENSE) file for details.
+
