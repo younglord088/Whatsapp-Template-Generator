@@ -1,27 +1,69 @@
-# WhatsappTemplateManager
+# WhatsApp Template Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+WhatsApp Template Manager is a web application that allows users to create and manage message templates for use in WhatsApp conversations. It provides a convenient way to save commonly used messages with placeholders for dynamic content such as names, dates, and locations.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Create message templates with placeholders.
+- Easily insert placeholders into template content.
+- Save and manage templates for future use.
+- User-friendly interface for template creation and management.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: Frontend framework for building the user interface.
+- Angular Material: UI component library for Angular.
+- TypeScript: Programming language for frontend development.
+- HTML/CSS: Markup and styling for the web application.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run the WhatsApp Template Manager locally, follow these steps:
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/your-username/whatsapp-template-manager.git
+```
 
-## Running end-to-end tests
+2. **Navigate to the project directory:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    cd whatsapp-template-manager
+    ```
 
-## Further help
+3. **Install dependencies:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server:**
+
+    ```bash
+    ng serve
+    ```
+
+5. **Open your web browser and navigate to [http://localhost:4200](http://localhost:4200) to view the application.**
+
+## Usage
+
+1. **Create a new message template by entering a template name and content in the provided fields.**
+2. **Use placeholders like `{name}`, `{date}`, `{location}` in the template content for dynamic values.**
+3. **Save the template to use it later in WhatsApp conversations.**
+4. **To insert placeholders into the template content, click on the "Insert Placeholder" button and select the desired placeholder from the dropdown menu.**
+5. **Manage your saved templates by editing or deleting them as needed.**
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to WhatsApp Template Manager, please follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch for your feature or bug fix.**
+3. **Make your changes and commit them with descriptive commit messages.**
+4. **Push your changes to your fork.**
+5. **Submit a pull request to the main repository's `main` branch.**
+
+## License
+
+This project is licensed under the MITD License - see the [LICENSE](LICENSE) file for details.
