@@ -1,0 +1,21 @@
+<!-- message-sending.component.html -->
+<mat-card>
+  <mat-form-field class="w-full">
+    <mat-label>Recipient List</mat-label>
+    <input matInput placeholder="Enter recipient list">
+  </mat-form-field>
+  
+  <mat-form-field class="w-full">
+    <mat-label>Selected Template</mat-label>
+    <mat-select [(value)]="selectedTemplate">
+      <mat-option *ngFor="let template of templates" [value]="template">
+        {{template}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="w-full">
+    <mat-label>Preview</mat-label>
+    <textarea matInput placeholder="Template preview"></textarea>
+  </mat-form-field>
+</mat-card>

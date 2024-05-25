@@ -1,0 +1,27 @@
+<div class="container mx-auto p-6">
+  <mat-card>
+    <h2 class="text-2xl font-semibold mb-4">Create Message Template</h2>
+    <form (ngSubmit)="saveTemplate()">
+      <mat-form-field class="w-full mb-4">
+        <mat-label>Template Name</mat-label>
+        <input matInput placeholder="Enter template name" [(ngModel)]="templateName" name="templateName" required>
+      </mat-form-field>
+      <mat-form-field class="w-full mb-4">
+        <mat-label>Template Content</mat-label>
+        <textarea matInput rows="4" placeholder="Enter message with placeholders like {{ '{' }}name{{ '}' }}, {{ '{' }}date{{ '}' }}, {{ '{' }}location{{ '}' }}" [(ngModel)]="templateContent" name="templateContent" required></textarea>
+      </mat-form-field>
+      <div class="flex items-center justify-between mb-4">
+        <button mat-raised-button color="primary" type="submit">Save Template</button>
+        <mat-menu #placeholderMenu="matMenu">
+          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}name{{ '}' }}')">{'{'}name{'}'}</button>
+          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}date{{ '}' }}')">{'{'}date{'}'}</button>
+          <button mat-menu-item (click)="insertPlaceholder('{{ '{' }}location{{ '}' }}')">{'{'}location{'}'}</button>
+        </mat-menu>
+        <button mat-raised-button [matMenuTriggerFor]="placeholderMenu">
+          Insert Placeholder
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>
